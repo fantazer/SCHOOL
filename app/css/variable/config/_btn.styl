@@ -1,0 +1,114 @@
+// ============================ Buttons ============================
+
+btnStyle(bg-btn,color-btn)
+	background bg-btn
+	color color-btn
+	border 1px solid color-btn
+	&:hover
+		background darken(bg-btn,20)
+		color color-btn
+
+btnStyleLight(br-btn,color-btn)
+	color color-btn
+	border br-btn solid color-btn
+	&:hover
+		color darken(color-btn,20)
+		border br-btn solid darken(color-btn,20)
+
+.btn
+	tr(all)
+	br(5px)
+	display inline-block
+	background none
+	border 0px
+	color black
+	text-align: center
+	font-weight: 700
+	&:hover
+		cursor pointer
+
+.btn--sm
+	@extend .btn
+	font-size 10px
+	padding 5px 10px
+	.nav-icon
+		size 10px
+
+.btn--md
+	@extend .btn
+	@extend .type--main
+	padding 10px 50px
+
+.btn--lg
+	@extend .btn
+	@extend .type--md
+	br(30px)
+	padding 20px 95px
+
+.btn--mobile
+	@extend .btn
+	+below(768px)
+		width 100%
+		text-align center
+
+
+.btn--yellow
+	@extend .btn
+	background-color yellow
+	.nav-icon
+		fill white
+	&:hover
+		color #000000
+		background: light-yellow
+	&:active
+		color #000000
+	input[type="submit"]
+		border 0
+	.nav-icon
+		fill white
+
+.btn--mark
+	@extend .btn
+	background-color $green
+	color white!important
+	.nav-icon
+		fill white
+	&:hover
+		color #000000
+		background: #2a801c
+	&:active
+		color #000000
+	input[type="submit"]
+		border 0
+	.nav-icon
+		fill white
+
+.btn--disable
+	@extend .disabled
+	border 1px solid $border-color
+	background-color #ffffff
+	color #000000
+
+.btn--light
+	@extend .btn
+	color black
+	border 1px solid $border-color
+	background-color #ffffff
+	&:hover
+		background-color #f0f0f0
+	&:active
+		background-color yellow
+		border 1px solid yellow
+	.nav-icon
+		fill black
+
+.btn--icon
+	flex(mid)
+
+.nav-icon
+	display inline-block
+	size 20px
+	margin 0 10px
+
+button
+	font-family $v-fon

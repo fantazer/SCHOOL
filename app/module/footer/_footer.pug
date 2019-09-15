@@ -1,0 +1,40 @@
+mixin footer()
+	//block footer
+	.footer
+		.main-cont
+			.footer-wrap
+				.footer-info
+					.footer-logo
+						img(src="img/logo.png", alt="")
+					.footer-contact
+						.footer-contact__el
+							.footer-contact__el-name Телефон/факс:
+							.footer-contact__el-val +7(812)417-57-70
+						.footer-contact__el
+							.footer-contact__el-name Эл. почта:
+							.footer-contact__el-val gbou540@yandex.ru
+						.footer-contact__el
+							.footer-contact__el-name Адрес:
+							.footer-contact__el-val ГБОУ гимназия №540, Санкт-Петербург 197345, Санкт-Петербург , ул. Оптиков дом 46, корпус 3, литер А
+				.footer-col
+					.footer__title Навигация
+					.footer__list
+						-
+							var items = [
+							"Глоссарий",
+							"Технология формирования КК",
+							"Наши достижения и опыт",
+							"Методические материалы",
+							"Конференции, семинары",
+							"Event-мероприятия",
+							"Социальное партнерство",
+							"Электронная учительская",
+							"Внутренние СМИ",
+							"Международное сотрудничество",
+							"Документы",
+							"Обратная связь",
+							];
+						each item in items
+							a(href="#").footer__list-el #{item}
+						a(href="https://www.youtube.com/channel/UCCIT8tchRlx5L3C1grBVEdA").footer__list-el Youtube канал
+	//block footer end

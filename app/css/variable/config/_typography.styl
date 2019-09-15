@@ -1,0 +1,103 @@
+$v-font =  'PT sans', sans-serif
+
+webfont('PF Beau Sans Pro', 'PFBeauSansPro-Black', '900')
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+.type--xs
+	typeSize(12,10)
+
+.type--sm
+	typeSize(12,12)
+
+.type--main
+	typeSize(15,15)
+
+.type--md
+	typeSize(20,16)
+	color black
+
+.type--lg
+	typeSize(24,18)
+
+.type--xl
+	typeSize(32,24)
+
+.type--bold
+	font-weight bold
+	font-family: "PF Beau Sans Pro"
+	color black
+
+.title--center
+	text-align: center
+
+
+.title--xl
+	+below(640px)
+		margin-bottom: 15px
+	@extend .type--xl
+	font-weight: 700
+	color black
+	margin-bottom: 30px
+
+.title--lg
+	+below(640px)
+		margin-bottom: 15px
+	@extend .type--lg
+	font-weight: 700
+	color black
+	margin-bottom: 30px
+
+.title--main
+	+below(640px)
+		margin-bottom: 15px
+	@extend .type--main
+	font-weight: 700
+	color black
+	margin-bottom: 30px
+
+h1
+	@extend .type--xl
+	color black
+h2
+	@extend .type--lg
+	color black
+h3
+	@extend .type--main
+	color black
+h4
+	@extend .type--sm
+	color black
+h5
+	@extend .type--xs
+	color black
+a
+	color black
+	text-decoration: none
+
+.link--blue
+	tr(all)
+	color blue
+	text-decoration: underline
+	&:hover
+		color #0178f2
+		text-decoration: none
+
+.link--text
+	tr(all)
+	text-decoration: underline
+	color black
+	opacity .7
+	&:hover
+		opacity 1
+		text-decoration: none
+
+
+.link--main
+	color black
+	hover-underline(blue)
+	&:hover
+		color black

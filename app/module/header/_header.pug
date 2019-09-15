@@ -1,0 +1,65 @@
+mixin header()
+	//block header
+	.head
+		.main-cont
+			.header
+				a(href="/").header-logo
+					img(src="img/logo.png", alt="")
+				.head-toggle
+					+icon("menu","icon icon-open")
+					+icon("close","icon icon-close")
+				//a(href="tel:8(495) 789-89-90").header-phone 8(495)789-89-90
+			.slide-menu
+				a(href="/").slide-menu-logo
+					img(src="img/logo-white.png", alt="")
+				.slide-menu__list
+					-
+						var items = [
+						"Технология формирования КК",
+						"Наши достижения и опыт",
+						"Методические материалы",
+						"Конференции, семинары",
+						"Социальное партнерство",
+						"Электронная учительская",
+						"Международное сотрудничество",
+						"Глоссарий",
+						"Event-мероприятия",
+						"Внутренние СМИ",
+						"Документы",
+						"Обратная связь",
+						];
+					each item in items
+						a(href="#").slide-menu__list-el #{item}
+		.nav
+			.main-cont
+				.nav-wrap
+					.nav-cat
+						.nav-cat__icon
+							+icon("menu","icon")
+						.nav-cat__text Навигация
+						.nav-cat__sub
+							-
+								var items = [
+								"Технология формирования КК",
+								"Наши достижения и опыт",
+								"Методические материалы",
+								"Конференции, семинары",
+								"Социальное партнерство",
+								"Электронная учительская",
+								"Международное сотрудничество",
+								];
+							each item in items
+								a(href="#").nav-cat__sub-el #{item}
+					.menu
+						-
+							var items = [
+							"Глоссарий",
+							"Event-мероприятия",
+							"Внутренние СМИ",
+							"Документы",
+							"Обратная связь",
+							];
+						each item in items
+							a(href="#").menu__el #{item}
+
+	//block header end

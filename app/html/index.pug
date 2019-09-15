@@ -1,0 +1,146 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		.banner(style="background-image:url('img/banner-main.1.jpg')")
+			.filter
+			.banner-content
+				.main-cont
+					.banner-wrap
+						.banner-text-slogan
+							.banner-text Инновационный продукт "Ступени роста"
+							.banner-title Корпоративная культура в образовательной организации
+							.banner-title-sub Формирование корпоративной культуры и продвижение имиджа образовательной организации
+						.banner-worker
+							img(src="img/man.png", alt="")
+
+		.section.section--border
+			.main-cont
+				.intro
+					.intro__img
+						img(src="img/teacher.jpg", alt="")
+					.intro__text.text
+						p Уважаемые коллеги! Мы рады приветствовать Вас на сайте уникального проекта "Ступени роста", посвященного формированию корпоративной культуры в образовательной организации. Корпоративная культура - неотъемлемая часть современной образовательной системы, направленной на достижение наилучших результатов.
+						p Наш проект - это плод длительной и творческой работы команды-единомышленников. Надеемся, что на сайте Вы найдете интересующую информацию. С уважением, Ирина Игоревна Ипатова, директор гимназии №540 Санкт-Петербурга.
+
+
+		//.section.section--gray
+			.main-cont
+				.section-title Внутренние СМИ
+				.review
+					.review__el
+						.review__el-img(style="background-image:url('https://visaapp.ru/wp-content/uploads/2019/02/Obuchenie-v-cheshskom-universitete.jpg')")
+						.review__el-content
+							.review__el-date 22.07
+							.review__el-title Правильный подход
+							.review__el-text  Акция по лесовосстановлению проходит в Подмосковье с 2013 года по инициативе губернатора Московской области Андрея Юрьевича Воробьёва.
+							.review__el-more Подробнее
+					.review__el.review__el--sm
+						.review__el-img(style="background-image:url('http://study-baltic.ru/wp-content/uploads/2019/03/corporate-1.jpg')")
+						.review__el-content
+							.review__el-date 14.03
+							.review__el-title Уровень знаний
+							.review__el-text  Федеральный институт педагогических измерений (ФИПИ) опубликовал проекты документов, определяющих структуру и содержание контрольных измерительных материалов (КИМ) основного
+							.review__el-more Подробнее
+					.review__el.review__el--sm.review__el--rotate
+						.review__el-content
+							.review__el-date 14.03
+							.review__el-title Качество литературы
+							.review__el-text  В рамках традиционной акции "Здоровье - твое богатство!" в нашей школе сегодня прошел Единый день здоровья!
+							.review__el-more Подробнее
+						.review__el-img(style="background-image:url('https://legionfg.ru/wp-content/uploads/2017/03/fotolia_39572856.jpg')")
+					.review__el.review__el--sm
+						.review__el-img(style="background-image:url('https://dialog-success.ru/wp-content/uploads/2017/11/anglijskij-dlya-vzroslyh.jpg')")
+						.review__el-content
+							.review__el-date 14.03
+							.review__el-title Новый учебный год
+							.review__el-text  Под таким девизом прошли пятиминутки отряда ЮИД для обучающихся начальных классов. Ребята побывали на транспортной площадке, поиграли в
+							.review__el-more Подробнее
+
+		.section
+			.main-cont
+				.advant
+					.advant-el.advant-el--slogan
+						.advant-slogan Наши успехи
+					.advant-el.advant-el--old
+						.advant-el__title 1500 учеников
+						.advant-el__text
+							ul
+								li 112 педагогов с высшей и первой квалификационной категорией
+								li 4 кандидата педагогических наук
+								li 29 награждены различными наградами.
+					.advant-el.advant-el--service
+						.advant-el__title Наши ценности
+						.advant-el__text
+							ul
+								li Я - лидер
+								li Мы - комманда
+								li Все - для качественного образования
+					.advant-el.advant-el--garant
+						.advant-el__title Миссия
+						.advant-el__text Миссия гимназии: Учить ради России и личного успеха каждого
+					.advant-el.advant-el--ekonom
+						.advant-el__title В ногу со временем
+						.advant-el__text С 12 по 15 сентября 2019 г. педагоги гимназии в рамках корпоративного менторинга прошли обучение в лицее "Ресурс" г.Казань.
+					.advant-el.advant-el--choice
+						.advant-el__title Наш девиз
+						.advant-el__text Создавая традиции&nbsp;-&nbspоткрыты инновациям
+					.advant-el.advant-el--person
+						.advant-el__title Квалифицированный персонал
+						.advant-el__text Гимназия - трижды обладатель кубка "За высокие результаты в конкурсе педагогических достижений Приморского района Санкт-Петербурга"
+
+		.section
+			.main-cont
+				.section-title Международное сотрудничество
+				.news
+					.news__el
+						a(href="#" style="background-image:url('img/item-2.jpg')").news__el-img
+							.el-numb 29.04.2019
+						.news__el-content
+							a(href="#").news__el-title Встреча с ректором (Mrs. Cecilia Axelsson) и преподавателями шведской гимназии "Holavedsgymnasiet" г. Транос
+							.news__el-text С 29 апреля по 1 мая 2019 г. гимназия №540 Приморского района Санкт-Петербурга принимала делегацию из Швеции. В состав делегации вошли ректор Сесилия Аксельссон и 7 преподавателей гимназии "Holavedsgymnasiet" г. Транос.
+					.news__el
+						a(href="#" style="background-image:url('img/item-3.jpg')").news__el-img
+							.el-numb 25.03.2019
+						.news__el-content
+							a(href="#").news__el-title 25-31 марта 2019 года учащиеся 8-11 классов с педагогами приняли участие в программе обмена с голландской школой "2College Durendael" (г.Ойстервейк)
+							.news__el-text В рамках программы международного обмена группа наших гимназистов посетила в марте 2019 года город Остервейк (Королевство Нидерланды). 26 марта мы побывали на экскурсии в Амстердаме
+					.news__el
+						a(href="#" style="background-image:url('img/item-1.jpg')").news__el-img
+							.el-numb 15.11.2018
+						.news__el-content
+							a(href="#").news__el-title Международная научно-практическая конференция «Теория и методика обучения иностранным языкам и культурам: традиции и инновации. Шатиловские чтения»
+							.news__el-text 15-16 ноября 2018 г. в РГПУ им. А.И. Герцена прошла Международная научно-практическая конференция «Теория и методика обучения иностранным языкам и культурам: традиции и инновации. Шатиловские чтения». Конференция собрала ведущих ученых-методистов в сфере преподавания иностранных языков
+
+		.section.section--gray
+			.main-cont
+				.section-title Новости и события
+				.video
+					a(href="https://www.youtube.com/embed/pVSTf5AcMec").fancybox.video__el
+						.video__el-img(style="background-image:url('img/item-4.jpg')")
+							.filter
+							.video__el-icon
+								+icon("play-button","icon")
+						.video__el-title Конкурс Правительства Санкт-Петербурга "Лучший руководитель образовательной организации" 2017 г.
+					a(href="https://www.youtube.com/embed/etQr5TDH984").fancybox.video__el
+						.video__el-img(style="background-image:url('img/item-7.jpg')")
+							.filter
+							.video__el-icon
+								+icon("play-button","icon")
+						.video__el-title Конкурс Правительства Санкт-Петербурга "Лучший руководитель образовательной организации" 2018 г.
+
+		//.section.section--gray
+			.main-cont
+				.section-title Наши достижения и опыт
+				.news
+					- for (var i=0;i<3;i++)
+						.news__el
+							a(href="#" style="background-image:url('http://kids2uk.ru/img/3202712.jpg')").news__el-img
+								.el-numb 23.08.2019
+							.news__el-content.news__el-content--white
+								a(href="#").news__el-title Выбор учителя года
+								.news__el-text Благодаря собственным лесозаготовкам, у нас не бывает перебоев с поставками леса и мы можем контролировать качество сырья на каждом этапе производства. А значит, наш клееный брус исключает брак, и всегда поступает на стройку вовремя.
+	+footer()
+include ./block_html/_script.pug
